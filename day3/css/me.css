@@ -3,10 +3,17 @@ body{
     
 }
 table {
+/*   
+    min-height: 100%; */
+    width: 100%;
+     /* margin-left: auto;
+      margin-right: auto; */
+}
+#container {
     width: 100%;
     min-height: 100%;
+    margin: auto;
 }
-
 #header {
     height: 64px;
     padding: 16px;
@@ -23,13 +30,16 @@ table {
 }
 #main {
     display:table;
+    height: 100%;
 }
 #left {
+    
     display: inline-block;
     width: 25%;
+    height: 100%;
     vertical-align: top;
     background-color: #ccc;
-    padding-bottom: 1850px;
+    /* padding-bottom: 1850px; */
 }
 #left ul {
     padding: 0px;
@@ -77,7 +87,7 @@ table {
 #right h2 {
     padding: 12px;
 }
-#right img {
+.small {
     padding: 12px;
     width: 200px;
 }
