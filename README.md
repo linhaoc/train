@@ -8,4 +8,4 @@ html的学习：[前往作业2](https://linhaoc.github.io/train/day2/index.html)
 
 ##  day3
 
-css的学习：[前往作业2](https://linhaoc.github.io/train/day3/index.html)
+css的学习：[前往作业3](https://linhaoc.github.io/train/day3/index.html)

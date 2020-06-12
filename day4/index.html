@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="referrer" content="no-referrer" /> -->
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgb(255,76,79);
+            width: 20%;
+            margin-bottom: 28px;
+        }
+        h4 {
+            text-align: center;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+        header {
+            background-color: rgb(255,76,79);
+        }
+        .header-title {
+            height: 60px;
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .nav ul>li a {
+            display: inline-block ;
+            padding: 8px;
+            color: white;
+        }
+        .section-title {
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .gallery li {
+            padding: 10px;
+            background-color: rgb(252, 238, 237) ;
+        }
+        .gallery img {
+            width: 250px;
+            height: 300px;
+        }
+        
+        .container.column {
+            flex-direction: column;
+        }
+        footer {
+            margin-top: 60px;
+            background-color: rgb(128, 0, 19) ;
+            min-height: 300px;
+        }
+        footer .left {
+            color: white;
+            padding: 70px 0px;
+            width: 60%;
+        }
+        footer .right {
+            width: 40%;
+            padding-top: 20px;
+            text-align: center;
+        }
+        footer img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-title">
+                <img class="icon" src="./images/shark(已去底).png" alt="logo">
+                <span>极客大叔</span>  
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#movie">喜欢的电影</a> </li>
+                    <li><a href="#book">喜欢的书</a> </li>
+                    <li><a href="#talk">畅聊扫码</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container column">
+            <h2 id="movie" class="section-title">喜欢的电影</h2>
+            <hr>
+            <ul class="gallery">
+                <li>
+                    <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3401745210,3434810146&fm=58&app=83&f=JPEG?w=400&h=533&s=E8E2A144FAB1AE5D0CFD548403007082" alt="">
+                    <h4>小丑</h4>
+                </li>
+                <li>
+                    <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3439850220,4003447440&fm=58&s=21F577860A8340DA193F5E7D0300C06C" alt="">
+                    <h4>调音师</h4>
+                </li>
+                <li>
+                    <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1230659646,4167998038&fm=58&app=83&f=JPEG?w=150&h=200&s=F1945995188548CA689839F1030050B2" alt="">
+                    <h4>一百样东西</h4>
+                </li>
+                <li>
+                    <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=669714783,2794656123&fm=58&app=83&f=JPEG?w=400&h=533&s=C8D6E20BCE3804969898950A0100A091" alt="">
+                    <h4>列夫.朗道:退变</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="container column">
+            <h2  id="book" class="section-title">喜欢的书</h2>
+            <hr>
+            <ul class="gallery">
+                <li>
+                    <img src="https://img3.doubanio.com/view/subject/s/public/s5951142.jpg" alt="">
+                    <h4>智慧书</h4>
+                </li>
+                <li>
+                    <img src="https://img1.doubanio.com/view/subject/s/public/s1745288.jpg" alt="">
+                    <h4>创意</h4>
+                </li>
+                <li>
+                    <img src="https://img1.doubanio.com/view/subject/s/public/s29053299.jpg" alt="">
+                    <h4>毫无PS痕迹</h4>
+                </li>
+                <li>
+                    <img src="https://img9.doubanio.com/view/subject/s/public/s27018246.jpg" alt="">
+                    <h4>然而很美</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="left">
+                大叔说他是一只独立特行的猪，那我就当个一只独立特行的鸟吧，交个朋友吗，扫下右边的二维码。让我们畅聊痛快！
+            </div>
+            <div id="talk" class="right">
+                <img src="https://img-blog.csdnimg.cn/20200612143431898.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

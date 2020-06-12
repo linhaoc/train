@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏</title>
+    <style>
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            width:100% ;
+        }
+        .nav li>a {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            background-color: rgb(241,241,241);
+            text-decoration: none;
+            color: black;
+        }
+        .nav li>a:hover{
+            background-color: rgba(116, 116, 116,1);
+        }
+        .active {
+            background-color: rgb(99, 188, 112) !important;
+        }
+        .nav li>a.active:hover {
+            background-color: rgba(99, 188,112,0.8) !important;
+        }
+
+        .nav2 {
+            background-color:rgb(51, 51, 51);
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }   
+        .nav2>li {
+            float: left;
+        }
+        .nav2>li a {
+            display: inline-block;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav2>li>a.active:hover {
+            background-color: rgba(99, 188,112,0.8) !important;
+        }
+        .nav2>li>a:hover{
+            background-color: black;
+        }
+        .nav2>li.right{
+            /* float: right !important; */
+        }
+    </style>
+</head>
+<body>
+    <h2>垂直导航栏</h2>
+    <ul class="nav">
+        <li><a href="" class="active">主页</a> </li>
+        <li><a href="">新闻</a> </li>
+        <li><a href="">联系</a> </li>
+        <li><a href="">关于我</a> </li>
+    </ul>
+    <h2>水平导航栏</h2>
+    <ul class="nav2">
+        <li><a href="" class="active">主页</a> </li>
+        <li><a href="">新闻</a> </li>
+        <li><a href="">联系</a> </li>
+        <li class="right">
+            
+            <a href="">关于我</a>
+         </li>
+    </ul>
+</body>
+</html>
