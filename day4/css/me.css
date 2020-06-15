@@ -86,7 +86,7 @@ header {
 footer {
     margin-top: 50px;
     background-color: rgb(128, 0, 19) ;
-    max-height: 260px;
+    /* max-height: 260px; */
     /* min-height: 300px; */
 }
 footer .left {
