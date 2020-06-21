@@ -113,3 +113,17 @@ footer img {
     padding: 15px 0;
     border-top: 2px solid rgb(120, 0, 18);
 }
+@media(min-width:992px){
+    .container {
+        max-width: 992px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+}
+@media(min-width:1200px){
+    .container {
+        max-width: 1200px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+}
