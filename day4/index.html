@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer" />
     <link rel="stylesheet" href="./css/me.css">
-
+    <script src="./js/jquery.js"></script>
     <title>大叔爱好</title>
 </head>
 <body>
@@ -29,19 +29,19 @@
             <h2 id="movie" class="section-title">喜欢的电影</h2>
             <hr>
             <ul class="gallery">
-                <li>
+                <li class="movie">
                     <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3401745210,3434810146&fm=58&app=83&f=JPEG?w=400&h=533&s=E8E2A144FAB1AE5D0CFD548403007082" alt="">
                     <h4>小丑</h4>
                 </li>
-                <li>
+                <li class="movie">
                     <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3439850220,4003447440&fm=58&s=21F577860A8340DA193F5E7D0300C06C" alt="">
                     <h4>调音师</h4>
                 </li>
-                <li>
+                <li class="movie">
                     <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1230659646,4167998038&fm=58&app=83&f=JPEG?w=150&h=200&s=F1945995188548CA689839F1030050B2" alt="">
                     <h4>一百样东西</h4>
                 </li>
-                <li>
+                <li class="movie">
                     <img src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=669714783,2794656123&fm=58&app=83&f=JPEG?w=400&h=533&s=C8D6E20BCE3804969898950A0100A091" alt="">
                     <h4>列夫.朗道:退变</h4>
                 </li>
@@ -87,5 +87,11 @@
         </div>
     </footer>
     <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279073130&web_id=1279073130"></script>
+    <script type="text/javascript">
+        $('.movie').click(function(){
+            var label = $(this).children()[1];
+            _czc.push(['_trackEvent', '电影', '点击', label.innerText,1]);
+        })
+    </script>
 </body>
 </html>
